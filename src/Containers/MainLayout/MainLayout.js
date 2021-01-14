@@ -8,7 +8,7 @@ const MainLayout = () => {
         <div className={classes.Navbar} >
             <nav>
                 <ul>
-                        <li><Link to='/'> Home </Link></li>
+                    <li><Link to='/'> Home </Link></li>
                     <li><Link to='/photos'> Photos </Link></li>
                     <li><Link to='/videos'> Videos </Link></li>
                     </ul>
