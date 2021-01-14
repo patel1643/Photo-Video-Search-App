@@ -3,7 +3,7 @@ import PhotoCard from '../../Components/PhotoCard/PhotoCard/PhotoCard';
 import classes from './PhotoSearchPage.module.css';
 import axios from 'axios';
 import SearchInput from '../../Components/PhotoCard/SearchInput/SearchInput';
-import Spinner from '../../UI Elements/Spinner/Spinner';
+import { Spinner } from 'react-bootstrap';
 
 
 class PhotoSearchPage extends Component{
@@ -43,7 +43,7 @@ render(){
     let loadingDiv = null;
         if(this.state.loading){
             // <div className={classes.GeneralDivs} >Loading....</div>
-            loadingDiv = <div> <br></br> <Spinner /> </div>
+            loadingDiv = <div> <br></br> <Spinner animation="border" /></div>
         }
         
         let results = <div className={classes.GeneralDivs} >Please search something in the search box!</div>
