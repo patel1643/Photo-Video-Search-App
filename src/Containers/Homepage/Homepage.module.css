@@ -1,0 +1,54 @@
+.HomepageText{
+    text-align: center;
+    padding: 40px;
+    height: 100%;
+}
+
+.HomepageText p{
+    margin: 0 auto;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+@media (min-width:760px) and (max-width: 1000px){
+    .HomepageText p{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media (max-width:600px){
+    .HomepageText{
+        padding: 10px;
+    }
+    
+    .HomepageText p{
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+
+    }
+}
+
+
+@media (max-width:350px){
+    .HomepageText{
+        text-align: center;
+        padding: 10px;
+        height: 100%;
+    }
+
+    .HomepageText h1 {
+        font-size: 30px;
+    }
+    
+    
+    .HomepageText p{
+        margin: 0 auto;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+}

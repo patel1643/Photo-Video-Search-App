@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import SearchInput from '../../Components/PhotoCard/SearchInput/SearchInput';
 import VideoCard from '../../Components/PhotoCard/VideoCard/VideoCard';
 import classes from './VideoSearchPage.module.css';
-import Spinner from '../../UI Elements/Spinner/Spinner';
+import {Spinner} from 'react-bootstrap';
 
 
 class VideoSearchPage extends Component{
@@ -41,7 +41,7 @@ class VideoSearchPage extends Component{
         let videoLink = ''
         let loadingDiv = null;
         if(this.state.loading){
-            loadingDiv = <Spinner />
+            loadingDiv = <Spinner animation="border"/>
         }
 
         if(this.state.videos.length !== 0){
@@ -64,7 +64,7 @@ class VideoSearchPage extends Component{
         }
         
         return(
-            <div>
+            <div className={classes.ContainerClass}>
                 <SearchInput
                     onChangeHandler={this.onChangeSearchHandler}
                     onClickHandler={this.searchExecuteVideos}
