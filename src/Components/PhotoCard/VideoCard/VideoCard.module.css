@@ -1,0 +1,38 @@
+.VideoContainer{
+    display: inline-block;
+    padding-left: 0px;
+    object-fit: cover;
+    margin: 2px 5px;
+}
+
+.VideoContainer img{
+    display: inline-block;  
+    object-fit: cover;
+}
+
+.VideoContainer video{
+    display: inline-block;
+    object-fit: cover;
+    filter: drop-shadow(0 0 0.2rem rgba(0,0,0,.5));
+  
+}
+
+
+.VideoContainer video, .VideoContainer img, .VideoContainer{
+    height: 300px;
+    width: 420px;
+}
+
+@media(min-width:1440px){
+    .VideoContainer video, .VideoContainer img, .VideoContainer{
+        width: 465px;
+    }
+}
+
+
+@media(min-width:1920px){
+    .VideoContainer video, .VideoContainer img, .VideoContainer{
+        width: 625px;
+        height: 360px;
+    }
+}

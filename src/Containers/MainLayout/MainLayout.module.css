@@ -1,0 +1,19 @@
+.HomepageText{
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+}
+
+.Navbar{
+    margin: 0 auto;
+}
+.Navbar li{
+    display: inline-flex;
+    text-align: center;
+
+    padding: 0 20px;
+}
+
+.Navbar li a{
+    text-decoration: none;
+}

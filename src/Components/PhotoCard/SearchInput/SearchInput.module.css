@@ -1,0 +1,31 @@
+.SearchBarContainer{
+    text-align: center;
+}
+.SearchBar{
+    border: 1px solid black;
+    left: 50%;
+    margin:0 auto;
+    padding: 10px;
+    height: 20px;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.SearchBar:focus{
+    border: 2px solid #00B4CC;
+    outline: none;
+    color:black;
+    transition: .2s;
+}
+
+.SearchButton{
+    margin-left: 5px;
+}
+.SearchButton i{
+    border-radius: 5px;
+    padding: 12px 20px;
+}
+
+.SearchButton:hover{
+    cursor: pointer;
+}
