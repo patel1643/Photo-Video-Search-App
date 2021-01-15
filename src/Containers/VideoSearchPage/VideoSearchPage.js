@@ -11,7 +11,8 @@ class VideoSearchPage extends Component{
         videos: [],
         query:'',
         loaded: false,
-        loading: false
+        loading: false,
+        errorOccured: false
     }
 
 
@@ -23,13 +24,19 @@ class VideoSearchPage extends Component{
             headers: {  
                 'Authorization': `${access_token}`  
             }  
-        }).then(data => {  
-            console.log(data);
-            this.setState({videos: data.data.videos, loading: false});
-            console.log(this.state.videos);
+        }).then(data => { 
+            this.setState({videos: data.data.videos, loading: false, loaded:true,errorOccured:false});
         }).catch(err => {
             console.log(err)
+            this.setState({errorOccured:true, loaded:false,loading:false})
         })
+    }
+
+    enterPressHandler = (e) =>{
+        if (e.key === "Enter"){ 
+            e.preventDefault();
+            this.searchExecuteVideos();
+        }   
     }
 
     onChangeSearchHandler = (event) => {
@@ -37,7 +44,8 @@ class VideoSearchPage extends Component{
     };
 
     render() {
-        let videos = <div className={classes.GeneralDivs} >Please search something in the search box!</div>
+        let videos =<div className={classes.GeneralDivs} >Please search something in the search box!</div>
+        
         let videoLink = ''
         let loadingDiv = null;
         if(this.state.loading){
@@ -45,7 +53,7 @@ class VideoSearchPage extends Component{
         }
 
         if(this.state.videos.length !== 0){
-            videos = this.state.videos.map( video => {
+          let  videosAll = this.state.videos.map( video => {
                 video.video_files.map( link => {
                    if (link.height === 720){
                        videoLink = link.link 
@@ -60,7 +68,15 @@ class VideoSearchPage extends Component{
                     imgLink={video.image} />
 
                 )
-            })
+            });
+            videos = <div><p className={classes.GeneralDivs}>Tip: Please hover on/off videos to play/pause :)</p> <br></br>{videosAll}
+            </div>
+        }
+
+        //Checks if the query was valid and returns the error
+        if((this.state.videos.length===0 && this.state.errorOccured) || (this.state.videos.length===0 && this.state.loaded)){
+            videos = <div className={classes.GeneralDivs}> Sorry your search doesn't match with anything on our database... <br></br>
+            Try something else... </div>
         }
         
         return(
@@ -68,6 +84,7 @@ class VideoSearchPage extends Component{
                 <SearchInput
                     onChangeHandler={this.onChangeSearchHandler}
                     onClickHandler={this.searchExecuteVideos}
+                    onEnterPress={this.enterPressHandler}
                     placeholder={'Search videos here..'} />
                 <div style={{textAlign:'center'}}>{loadingDiv}</div>
                 <div style={{textAlign:'center'}}>{videos}</div>

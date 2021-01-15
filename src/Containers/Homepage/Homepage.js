@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Homepage.module.css';
-import { Jumbotron, Container } from 'react-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
 
 const Homepage = () =>{
     return(
@@ -10,7 +10,9 @@ const Homepage = () =>{
                    
                     <p>
                         You're on homepage which is unfortunately still under development.
-                        Please navigate to search photos and videos from the Navigation bar
+                        There are a lot more features coming soon! 
+                        Currently users can just search for desired photos and videos, so
+                        please navigate to search photos and videos from the navigation bar.
                     </p>
 
                     

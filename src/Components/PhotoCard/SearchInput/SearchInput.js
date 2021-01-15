@@ -9,8 +9,8 @@ const SearchInput = (props) =>{
             <FormControl 
             type="text" 
             onChange={props.onChangeHandler}  
-            placeholder={props.placeholder} className="mr-sm-3" />
-            <Button onClick={props.onClickHandler} variant="outline-success">Search</Button>
+            placeholder={props.placeholder} className="mr-sm-3" onKeyDown={props.onEnterPress}/>
+            <Button className={classes.ButtonSpacing}  onClick={props.onClickHandler} variant="outline-success">Search</Button>
         </Form>
         </div>
     );

@@ -5,8 +5,8 @@ const PhotoCard = (props1) => {
     return(
 
         <Spring
-        from={{opacity:0, marginTop:'-500px', display: 'inline-block'}}
-        to={{opacity:1,marginTop:'0',display: 'inline-block' }}
+        from={{opacity:0, display: 'inline-block'}}
+        to={{opacity:1,display: 'inline-block' }}
         >
             {props => (
                 <div style={props} >

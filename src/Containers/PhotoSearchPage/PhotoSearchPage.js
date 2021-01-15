@@ -13,6 +13,7 @@ class PhotoSearchPage extends Component{
         loaded: false,
         queryString:'',
         loading:false,
+        errorOccured:false
     }
 
 
@@ -33,46 +34,58 @@ class PhotoSearchPage extends Component{
             }  
         }).then(data => {  
             console.log(data.data);  
-            this.setState({images: data.data.photos,loaded:true, loading:false});
+            this.setState({images: data.data.photos,loaded:true, loading:false, errorOccured:false});
         }).catch(err => {
-            this.setState({loading:false});
+            this.setState({loading:false, errorOccured:true});
         })
     }  
 
-render(){
-    let loadingDiv = null;
-        if(this.state.loading){
-            // <div className={classes.GeneralDivs} >Loading....</div>
-            loadingDiv = <div> <br></br> <Spinner animation="border" /></div>
-        }
-        
-        let results = <div className={classes.GeneralDivs} >Please search something in the search box!</div>
-        if (this.state.loaded){
-            results = this.state.images.map(image => {
-                return(
-                <PhotoCard key={image.id} sourceLink = {image.src.medium} alt={image.photographer}/>    
-                )
-           
-            })
-        }
-        if(this.state.loaded && (this.state.images.length === 0)){
-            results = <div className={classes.GeneralDivs}> Sorry your search doesn't match with anything on our database... <br></br>
-            Try something else... </div>
-        }
-        
-    return (
-        
-        <div className={classes.ContainerClass} >
-            <SearchInput 
-            onChangeHandler={this.changeHandler}  
-            onClickHandler={this.searchExecuteHandler}
-            placeholder={'Search photos here...'}/>
-            <br></br>
-            <div style={{textAlign:'center'}}>{loadingDiv}</div>
-            <div style={{textAlign:'center'}}>{results}</div>
-        </div>
-    )
-}
+    enterPressHandler = (e) =>{
+        if (e.key === "Enter"){ 
+            e.preventDefault();
+            console.log('Enter is pressed')
+            this.searchExecuteHandler();
+        }   
+    }
+
+    render(){
+        let loadingDiv = null;
+            if(this.state.loading){
+                // <div className={classes.GeneralDivs} >Loading....</div>
+                loadingDiv = <div> <br></br> <Spinner animation="border" /></div>
+            }
+            
+            let results = <div className={classes.GeneralDivs} >Please search something in the search box!</div>
+            
+            if (this.state.loaded){
+                results = this.state.images.map(image => {
+                    return(
+                    <PhotoCard key={image.id} sourceLink = {image.src.medium} alt={image.photographer}/>    
+                    )
+            
+                })
+            }
+
+            //Checks if the query was valid and returns the error
+            if((this.state.images.length===0 && this.state.errorOccured) || (this.state.images.length===0 && this.state.loaded)){
+                results = <div className={classes.GeneralDivs}> Sorry your search doesn't match with anything on our database... <br></br>
+                Try something else... </div>
+            }
+            
+        return (
+            
+            <div className={classes.ContainerClass} >
+                <SearchInput 
+                onChangeHandler={this.changeHandler}  
+                onClickHandler={this.searchExecuteHandler}
+                placeholder={'Search photos here...'}
+                onEnterPress={this.enterPressHandler}/>
+                <br></br>
+                <div style={{textAlign:'center'}}>{loadingDiv}</div>
+                <div style={{textAlign:'center'}}>{results}</div>
+            </div>
+        )
+    }
 
 }
 

@@ -4,7 +4,9 @@
     object-fit: cover;
     margin: 2px 5px;
 }
-
+.VideoContainer:hover{
+    cursor: pointer;
+}
 .VideoContainer img{
     display: inline-block;  
     object-fit: cover;
@@ -22,6 +24,14 @@
     height: 300px;
     width: 420px;
 }
+
+@media(max-width:420px){
+    .VideoContainer video, .VideoContainer img, .VideoContainer{
+        height: auto;
+        width: 95vw;
+    }
+}
+
 
 @media(min-width:1440px){
     .VideoContainer video, .VideoContainer img, .VideoContainer{
