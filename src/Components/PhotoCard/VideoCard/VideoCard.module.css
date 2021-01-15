@@ -27,7 +27,7 @@
 
 @media(max-width:420px){
     .VideoContainer video, .VideoContainer img, .VideoContainer{
-        height: auto;
+        height: 300px;
         width: 95vw;
     }
 }

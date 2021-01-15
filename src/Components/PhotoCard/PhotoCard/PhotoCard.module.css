@@ -1,9 +1,7 @@
 .PhotoContainer{
     width: auto;
     height: auto;
-    /* padding: 10px 10px; */
     display: inline-block;
-    /* text-align: center; */
     overflow: hidden;
 }
 
@@ -45,5 +43,9 @@
 @media (max-width:750px){
     .PhotoContainer img{
         width: 90vw;
+        
+    }
+    .PhotoContainer{
+        margin: 10px auto;
     }
 }
