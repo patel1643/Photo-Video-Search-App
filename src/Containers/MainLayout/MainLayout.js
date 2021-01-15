@@ -20,7 +20,7 @@ const MainLayout = () => {
                     </Nav>
             </Navbar>
             <Switch>
-            <Route path='/' exact component={Homepage} />
+            <Route path='/Photo-Video-Search-App/' exact component={Homepage} />
             <Route path='/photos' component={PhotoSearchPage} />
             <Route path='/videos' component={VideoSearchPage} />
             </Switch>
