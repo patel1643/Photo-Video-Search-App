@@ -14,7 +14,7 @@ const MainLayout = () => {
             
             <Navbar className="justify-content-center fixed-top" bg="dark" variant="dark">                    
                     <Nav className={classes.NavigationBar}>
-                        <Nav.Item ><Nav.Link as={NavLink} exact to='/'>Home</Nav.Link></Nav.Item>
+                        <Nav.Item ><Nav.Link as={NavLink} exact to='/Photo-Video-Search-App/'>Home</Nav.Link></Nav.Item>
                         <Nav.Item ><Nav.Link as={NavLink} to='/photos'>Photos</Nav.Link></Nav.Item>
                         <Nav.Item ><Nav.Link as={NavLink} to='/videos'>Videos</Nav.Link></Nav.Item>
                     </Nav>
