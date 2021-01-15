@@ -4,6 +4,13 @@
     font-weight: 600;
     padding-top:24px ;
 }
+.MobileDivs{
+    display: none;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top:24px ;
+}
 .ContainerClass{
     margin-bottom: 50px;
 }
@@ -13,5 +20,13 @@
     .ContainerClass{
         margin-left: 10px;
         margin-right:10px;
+    }
+
+    .GeneralDivs{
+        display:none;
+    }
+
+    .MobileDivs{
+        display: block;
     }
 }

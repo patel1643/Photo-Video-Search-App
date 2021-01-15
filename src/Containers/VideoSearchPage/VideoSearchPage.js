@@ -69,7 +69,8 @@ class VideoSearchPage extends Component{
 
                 )
             });
-            videos = <div><p className={classes.GeneralDivs}>Tip: Please hover on/off videos to play/pause :)</p> <br></br>{videosAll}
+            videos = <div><p className={classes.GeneralDivs}>Tip: Please hover on/off videos to play/pause :)</p>
+            <p className={classes.MobileDivs}>Tip: Please gently tap on videos to play :)</p> <br></br>{videosAll}
             </div>
         }
 
