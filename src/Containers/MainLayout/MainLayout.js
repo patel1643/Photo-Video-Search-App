@@ -15,14 +15,14 @@ const MainLayout = () => {
             <Navbar className="justify-content-center fixed-top" bg="dark" variant="dark">                    
                     <Nav className={classes.NavigationBar}>
                         <Nav.Item ><Nav.Link as={NavLink} exact to='/Photo-Video-Search-App/'>Home</Nav.Link></Nav.Item>
-                        <Nav.Item ><Nav.Link as={NavLink} to='/photos'>Photos</Nav.Link></Nav.Item>
-                        <Nav.Item ><Nav.Link as={NavLink} to='/videos'>Videos</Nav.Link></Nav.Item>
+                        <Nav.Item ><Nav.Link as={NavLink} to='/Photo-Video-Search-App/photos'>Photos</Nav.Link></Nav.Item>
+                        <Nav.Item ><Nav.Link as={NavLink} to='/Photo-Video-Search-App/videos'>Videos</Nav.Link></Nav.Item>
                     </Nav>
             </Navbar>
             <Switch>
             <Route path='/Photo-Video-Search-App/' exact component={Homepage} />
-            <Route path='/photos' component={PhotoSearchPage} />
-            <Route path='/videos' component={VideoSearchPage} />
+            <Route path='/Photo-Video-Search-App/photos' component={PhotoSearchPage} />
+            <Route path='/Photo-Video-Search-App/videos' component={VideoSearchPage} />
             </Switch>
             <Footer/>
 
