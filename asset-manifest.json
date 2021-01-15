@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Photo-Video-Search-App/static/css/main.1a28792f.chunk.css",
+    "main.js": "/Photo-Video-Search-App/static/js/main.0c941462.chunk.js",
+    "main.js.map": "/Photo-Video-Search-App/static/js/main.0c941462.chunk.js.map",
+    "runtime-main.js": "/Photo-Video-Search-App/static/js/runtime-main.71348163.js",
+    "runtime-main.js.map": "/Photo-Video-Search-App/static/js/runtime-main.71348163.js.map",
+    "static/css/2.ae9f1eb3.chunk.css": "/Photo-Video-Search-App/static/css/2.ae9f1eb3.chunk.css",
+    "static/js/2.2b489667.chunk.js": "/Photo-Video-Search-App/static/js/2.2b489667.chunk.js",
+    "static/js/2.2b489667.chunk.js.map": "/Photo-Video-Search-App/static/js/2.2b489667.chunk.js.map",
+    "static/js/3.9badac3a.chunk.js": "/Photo-Video-Search-App/static/js/3.9badac3a.chunk.js",
+    "static/js/3.9badac3a.chunk.js.map": "/Photo-Video-Search-App/static/js/3.9badac3a.chunk.js.map",
+    "index.html": "/Photo-Video-Search-App/index.html",
+    "static/css/2.ae9f1eb3.chunk.css.map": "/Photo-Video-Search-App/static/css/2.ae9f1eb3.chunk.css.map",
+    "static/css/main.1a28792f.chunk.css.map": "/Photo-Video-Search-App/static/css/main.1a28792f.chunk.css.map",
+    "static/js/2.2b489667.chunk.js.LICENSE.txt": "/Photo-Video-Search-App/static/js/2.2b489667.chunk.js.LICENSE.txt",
+    "static/media/brand-no-bg.d83216e8.png": "/Photo-Video-Search-App/static/media/brand-no-bg.d83216e8.png",
+    "static/media/react-bootstrap.534ba574.svg": "/Photo-Video-Search-App/static/media/react-bootstrap.534ba574.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71348163.js",
+    "static/css/2.ae9f1eb3.chunk.css",
+    "static/js/2.2b489667.chunk.js",
+    "static/css/main.1a28792f.chunk.css",
+    "static/js/main.0c941462.chunk.js"
+  ]
+}
