@@ -11,8 +11,8 @@ const Homepage = () =>{
                     <p>
                         You're on homepage which is unfortunately still under development.
                         There are a lot more features coming soon! 
-                        Currently users can just search for desired photos and videos, so
-                        please navigate to search photos and videos from the navigation bar.
+                        Currently users can search for desired <strong>Photos, Videos and GIFs</strong> . So,
+                        please navigate accordingly to the desired pages from the navigation bar.
                     </p>
 
                     
