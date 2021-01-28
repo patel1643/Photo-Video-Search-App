@@ -1,0 +1,52 @@
+
+.GifContainer{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.GifContainer img{
+    border-radius: 3px;
+    width: 31.75vw;
+    height: 270px;
+    padding: 0px 5px;
+    filter: drop-shadow(0 0 0.2rem rgba(0,0,0,.5));
+    transition: .2s;
+    object-fit: cover;
+    
+}
+
+@media (min-width:1440px){
+    .GifContainer img{
+        width: 32.2vw;
+    }
+}
+
+@media (min-width:1920px){
+    .GifContainer img{
+        width: 32.5vw;
+    }
+}
+
+@media (max-width:967px){
+    .GifContainer img{
+        width: 31.5vw;
+    }
+}
+
+@media (max-width:836px){
+    .GifContainer img{
+        width: 47.8vw;
+    }
+}
+
+@media (max-width:750px){
+    .GifContainer img{
+        width: 90vw;
+        
+    }
+    .GifContainer{
+        margin: 10px auto;
+    }
+}

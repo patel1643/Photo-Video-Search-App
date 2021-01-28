@@ -1,0 +1,16 @@
+.GeneralDivs{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.ContainerClass{
+    margin-bottom: 50px;
+}
+
+@media (max-width:600px){
+    .ContainerClass{
+        margin-left: 10px;
+        margin-right:10px;
+    }
+}
