@@ -38,7 +38,7 @@ class GifSearchPage extends Component{
         if (e.key === "Enter"){ 
             e.preventDefault();
             this.searchExecuteHandler();
-            this.document.activeElement.blur();
+            document.activeElement.blur();
         }   
     }
 

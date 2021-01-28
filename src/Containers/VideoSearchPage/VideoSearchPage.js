@@ -35,7 +35,7 @@ class VideoSearchPage extends Component{
         if (e.key === "Enter"){ 
             e.preventDefault();
             this.searchExecuteVideos();
-            this.document.activeElement.blur();
+            document.activeElement.blur();
         }   
     }
 
