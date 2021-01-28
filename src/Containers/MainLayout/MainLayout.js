@@ -7,7 +7,7 @@ import classes from './MainLayout.module.css';
 import {Navbar, Nav} from 'react-bootstrap';
 import Footer from '../../Components/Footer/Footer';
 import GifSearchPage from '../GifSearchPage/GifSearchPage';
-import { Spring } from 'react-spring/renderprops';
+// import { Spring } from 'react-spring/renderprops';
 
 
 const MainLayout = () => {

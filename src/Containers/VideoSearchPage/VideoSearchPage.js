@@ -27,7 +27,6 @@ class VideoSearchPage extends Component{
         }).then(data => { 
             this.setState({videos: data.data.videos, loading: false, loaded:true,errorOccured:false});
         }).catch(err => {
-            console.log(err)
             this.setState({errorOccured:true, loaded:false,loading:false})
         })
     }
@@ -36,6 +35,7 @@ class VideoSearchPage extends Component{
         if (e.key === "Enter"){ 
             e.preventDefault();
             this.searchExecuteVideos();
+            this.document.activeElement.blur();
         }   
     }
 

@@ -38,6 +38,7 @@ class GifSearchPage extends Component{
         if (e.key === "Enter"){ 
             e.preventDefault();
             this.searchExecuteHandler();
+            this.document.activeElement.blur();
         }   
     }
 
@@ -53,8 +54,7 @@ class GifSearchPage extends Component{
             if (this.state.loaded){
                 results = this.state.gifs.map(gif => {
                     return(
-                    <GifCard key={gif.id} sourceLink={gif.images.downsized_medium.url}/>    
-                    
+                    <GifCard key={gif.id} sourceLink={gif.images.downsized_medium.url}/>
                     )
             
                 })

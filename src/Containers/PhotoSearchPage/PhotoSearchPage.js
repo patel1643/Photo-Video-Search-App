@@ -27,13 +27,11 @@ class PhotoSearchPage extends Component{
         let query = this.state.queryString;
         let url = "https://api.pexels.com/v1/search?query="+ query +"&orientation=landscape";  
         const access_token = '563492ad6f91700001000001c5f0fdbccfbc4f36bde43e2f95914b76';  
-        console.log(url);
         axios.get(url, {  
             headers: {  
                 'Authorization': `${access_token}`  
             }  
-        }).then(data => {  
-            console.log(data.data);  
+        }).then(data => {
             this.setState({images: data.data.photos,loaded:true, loading:false, errorOccured:false});
         }).catch(err => {
             this.setState({loading:false, errorOccured:true});
@@ -43,8 +41,8 @@ class PhotoSearchPage extends Component{
     enterPressHandler = (e) =>{
         if (e.key === "Enter"){ 
             e.preventDefault();
-            console.log('Enter is pressed')
             this.searchExecuteHandler();
+            this.document.activeElement.blur();
         }   
     }
 
