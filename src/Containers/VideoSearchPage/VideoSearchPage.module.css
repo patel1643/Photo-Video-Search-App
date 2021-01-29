@@ -4,12 +4,15 @@
     font-weight: 600;
     padding-top:24px ;
 }
-.MobileDivs{
+.MobileVersion{
     display: none;
     text-align: center;
     font-size: 25px;
     font-weight: 600;
     padding-top:24px ;
+}
+.DesktopVersion{
+    display: none;
 }
 .ContainerClass{
     margin-bottom: 50px;
@@ -22,11 +25,10 @@
         margin-right:10px;
     }
 
-    .GeneralDivs{
-        display:none;
+    .DesktopVersion{
+        display: none !important;
     }
-
-    .MobileDivs{
+    .MobileVersion{
         display: block;
     }
 }

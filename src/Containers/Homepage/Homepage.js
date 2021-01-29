@@ -21,7 +21,7 @@ const Homepage = () =>{
                         please navigate accordingly to the desired pages from the navigation bar.
                     </p>
                 </Jumbotron>
-                <p className={classes.Footnote} > <strong> Tip: </strong>Tap anywhere on the screen to add more background particles :)</p>
+                <p className={classes.Footnote} > <strong> Tip: </strong>Tap anywhere on the screen to add more background particles <b>☺️</b></p>
                 <Particles 
                 canvasClassName={classes.particles}
         params={{
@@ -50,7 +50,7 @@ const Homepage = () =>{
                 "value": 1.5
               },
               "opacity": {
-                "value": 0.8,
+                "value": .6,
                 "random": true,
                 "anim": {
                   "enable": true,
@@ -59,8 +59,8 @@ const Homepage = () =>{
                   "sync": false
                 }
               },
-              "size": {
-                "value": 19.5,
+              size: {
+                "value": 15.5,
                 "random": true,
                 "anim": {
                   "enable": true,
@@ -79,14 +79,14 @@ const Homepage = () =>{
               "move": {
                 "enable": true,
                 "speed": 0.5,
-                "direction": "bottom",
-                "random": false,
+                "direction": "none",
+                "random": true,
                 "straight": false,
                 "out_mode": "out",
                 "bounce": true,
                 "attract": {
                   "enable": false,
-                  "rotateX": 600,
+                  "rotateX": 1200,
                   "rotateY": 1200
                 }
               }
@@ -115,8 +115,8 @@ const Homepage = () =>{
                   }
                 },
                 "bubble": {
-                  "distance": 800,
-                  "size": 80,
+                  "distance": 300,
+                  "size": 20,
                   "duration": 2,
                   "opacity": 0.8,
                   "speed": 3
@@ -126,14 +126,14 @@ const Homepage = () =>{
                   "duration": 0.4
                 },
                 "push": {
-                  "particles_nb": 4
+                  "particles_nb": 10
                 },
                 "remove": {
                   "particles_nb": 2
                 }
               }
             },
-            "retina_detect": true
+            "retina_detect": false
           }} 
       />          
              </div>

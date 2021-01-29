@@ -4,9 +4,11 @@
     height: 100%;
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.5) !important;
-    margin-top: 30px;
+    margin-top: 40px;
     backdrop-filter: blur(3px);
     width:73vw;
+    box-shadow:rgba(0,0,0, .4) 0px 0px 36px 15px;
+    border: 1px solid rgba(0,0,0, .6);
 }
 
 .HomepageText p{
@@ -24,6 +26,8 @@
     padding: 10px;
     border-radius: 3px;
     font-size: 20px;
+    backdrop-filter: blur(3px);
+    box-shadow:rgba(0,0,0, .4) 0px 0px 36px 15px;
 }
 .particles{
     position:absolute; top:0; left:0; z-index:-2;
@@ -45,6 +49,7 @@
     .HomepageText{
         padding: 10px;
         width:90vw;
+        box-shadow:rgba(0,0,0, .1) 0px 0px 36px 15px;
     }
     
     .HomepageText p{
@@ -62,6 +67,7 @@
         font-size: 14px;
         width:90vw;
         text-align: center;
+        box-shadow:rgba(0,0,0, .1) 0px 0px 36px 15px;
     }
 }
 
