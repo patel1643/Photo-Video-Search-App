@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Photo-Video-Search-App/static/css/main.c39b74c0.chunk.css",
-    "main.js": "/Photo-Video-Search-App/static/js/main.b3a29171.chunk.js",
-    "main.js.map": "/Photo-Video-Search-App/static/js/main.b3a29171.chunk.js.map",
+    "main.js": "/Photo-Video-Search-App/static/js/main.1d41b977.chunk.js",
+    "main.js.map": "/Photo-Video-Search-App/static/js/main.1d41b977.chunk.js.map",
     "runtime-main.js": "/Photo-Video-Search-App/static/js/runtime-main.293f4b0c.js",
     "runtime-main.js.map": "/Photo-Video-Search-App/static/js/runtime-main.293f4b0c.js.map",
     "static/css/2.ae9f1eb3.chunk.css": "/Photo-Video-Search-App/static/css/2.ae9f1eb3.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.ae9f1eb3.chunk.css",
     "static/js/2.1a6bfcd5.chunk.js",
     "static/css/main.c39b74c0.chunk.css",
-    "static/js/main.b3a29171.chunk.js"
+    "static/js/main.1d41b977.chunk.js"
   ]
 }
