@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Photo-Video-Search-App/static/css/main.ee513ff8.chunk.css",
-    "main.js": "/Photo-Video-Search-App/static/js/main.41961991.chunk.js",
-    "main.js.map": "/Photo-Video-Search-App/static/js/main.41961991.chunk.js.map",
+    "main.css": "/Photo-Video-Search-App/static/css/main.c39b74c0.chunk.css",
+    "main.js": "/Photo-Video-Search-App/static/js/main.b3a29171.chunk.js",
+    "main.js.map": "/Photo-Video-Search-App/static/js/main.b3a29171.chunk.js.map",
     "runtime-main.js": "/Photo-Video-Search-App/static/js/runtime-main.293f4b0c.js",
     "runtime-main.js.map": "/Photo-Video-Search-App/static/js/runtime-main.293f4b0c.js.map",
     "static/css/2.ae9f1eb3.chunk.css": "/Photo-Video-Search-App/static/css/2.ae9f1eb3.chunk.css",
-    "static/js/2.cad9f85e.chunk.js": "/Photo-Video-Search-App/static/js/2.cad9f85e.chunk.js",
-    "static/js/2.cad9f85e.chunk.js.map": "/Photo-Video-Search-App/static/js/2.cad9f85e.chunk.js.map",
+    "static/js/2.1a6bfcd5.chunk.js": "/Photo-Video-Search-App/static/js/2.1a6bfcd5.chunk.js",
+    "static/js/2.1a6bfcd5.chunk.js.map": "/Photo-Video-Search-App/static/js/2.1a6bfcd5.chunk.js.map",
     "static/js/3.b1e41933.chunk.js": "/Photo-Video-Search-App/static/js/3.b1e41933.chunk.js",
     "static/js/3.b1e41933.chunk.js.map": "/Photo-Video-Search-App/static/js/3.b1e41933.chunk.js.map",
     "index.html": "/Photo-Video-Search-App/index.html",
     "static/css/2.ae9f1eb3.chunk.css.map": "/Photo-Video-Search-App/static/css/2.ae9f1eb3.chunk.css.map",
-    "static/css/main.ee513ff8.chunk.css.map": "/Photo-Video-Search-App/static/css/main.ee513ff8.chunk.css.map",
-    "static/js/2.cad9f85e.chunk.js.LICENSE.txt": "/Photo-Video-Search-App/static/js/2.cad9f85e.chunk.js.LICENSE.txt",
+    "static/css/main.c39b74c0.chunk.css.map": "/Photo-Video-Search-App/static/css/main.c39b74c0.chunk.css.map",
+    "static/js/2.1a6bfcd5.chunk.js.LICENSE.txt": "/Photo-Video-Search-App/static/js/2.1a6bfcd5.chunk.js.LICENSE.txt",
     "static/media/brand-no-bg.d83216e8.png": "/Photo-Video-Search-App/static/media/brand-no-bg.d83216e8.png",
     "static/media/react-bootstrap.534ba574.svg": "/Photo-Video-Search-App/static/media/react-bootstrap.534ba574.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.293f4b0c.js",
     "static/css/2.ae9f1eb3.chunk.css",
-    "static/js/2.cad9f85e.chunk.js",
-    "static/css/main.ee513ff8.chunk.css",
-    "static/js/main.41961991.chunk.js"
+    "static/js/2.1a6bfcd5.chunk.js",
+    "static/css/main.c39b74c0.chunk.css",
+    "static/js/main.b3a29171.chunk.js"
   ]
 }
