@@ -139,7 +139,7 @@ class PhotoSearchPage extends Component{
                 <div  style={{textAlign:'center'}}>{results}</div>
                 <div style={{textAlign:'center'}}>{loadingDiv}
                 {/* Handles the scroll action and triggers a function when user scrolls at the end of page */}
-                <BottomScrollListener onBottom={this.nextPageHandler} />;
+                <BottomScrollListener onBottom={this.nextPageHandler} />
                 </div>
                 
             </div>
